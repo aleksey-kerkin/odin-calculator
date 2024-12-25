@@ -25,6 +25,9 @@ input {
   cursor: default;
   outline: none;
 }
+input::placeholder {
+  color: #000000;
+}
 
 button {
   width: 70px;
@@ -82,7 +85,7 @@ button:active {
   flex-wrap: wrap;
 }
 #zero {
-  width: calc(100% - 6px);
+  width: calc(100% - 76px);
 }
 #clear {
   width: calc(100% - 8px);
