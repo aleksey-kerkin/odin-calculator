@@ -25,4 +25,21 @@ function divideNumbers(...args) {
   return args.reduce((acc, val) => acc / val);
 }
 
-console.log(divideNumbers(10, 0));
+const numOne = null;
+const numTwo = null;
+const operator = "";
+
+function operate(numOne, numTwo, operator) {
+  switch (operator) {
+    case "+":
+      return addNumbers(numOne, numTwo);
+    case "-":
+      return subtractNumbers(numOne, numTwo);
+    case "*":
+      return multiplyNumbers(numOne, numTwo);
+    case "/":
+      return divideNumbers(numOne, numTwo);
+    default:
+      return "err";
+  }
+}
