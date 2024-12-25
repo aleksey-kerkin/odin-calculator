@@ -98,7 +98,7 @@ function calculate() {
     displayField.value = "Error";
     return;
   }
-  previousNumber = result.toString();
+  previousNumber = result.toFixed(2).toString();
   operator = "";
   currentNumber = previousNumber;
   displayField.value = currentNumber;
